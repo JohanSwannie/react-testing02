@@ -7,9 +7,9 @@ test("This is an empty test", () => {});
 
 // Second try a test that throws the error - This test will fail
 
-test("Throw error explicitly", () => {
-  throw new error("This is an error");
-});
+// test("Throw error explicitly", () => {
+//   throw new error("This is an error");
+// });
 
 test("App contains correct heading", () => {
   render(<App />);
