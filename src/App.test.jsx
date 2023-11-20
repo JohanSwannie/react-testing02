@@ -1,6 +1,16 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
+// First try an Empty Test - This test will pass
+
+test("This is an empty test", () => {});
+
+// Second try a test that throws the error - This test will fail
+
+test("Throw error explicitly", () => {
+  throw new error("This is an error");
+});
+
 test("App contains correct heading", () => {
   render(<App />);
   const headingElement = screen.getByText(
