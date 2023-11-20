@@ -8,3 +8,16 @@ test("App contains correct heading", () => {
   );
   expect(headingElement).toBeInTheDocument();
 });
+
+test("App heading description length to be 79 characters long", () => {
+  render(<App />);
+  const appHeadingDescr = document.getElementById("heading").innerHTML;
+  expect(appHeadingDescr).toHaveLength(79);
+});
+
+test("App sub heading description length to be 55 characters long", () => {
+  render(<App />);
+  const appSubHeadingDescrLength =
+    document.getElementById("subheading").innerHTML.length;
+  expect(appSubHeadingDescrLength).toBe(55);
+});
