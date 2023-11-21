@@ -1,3 +1,5 @@
+import ColorPicket from "./components/ColorPicket";
+
 function App() {
   return (
     <div>
@@ -9,6 +11,7 @@ function App() {
         The more you learn, the better equipped you will become
       </h3>
       <a href="#">Learn More</a>
+      <ColorPicket />
     </div>
   );
 }
