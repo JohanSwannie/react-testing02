@@ -31,3 +31,9 @@ test("App sub heading description length to be 55 characters long", () => {
     document.getElementById("subheading").innerHTML.length;
   expect(appSubHeadingDescrLength).toBe(55);
 });
+
+test("Code renders 'The more you learn'", () => {
+  render(<App />);
+  const linkElement = screen.getByRole("link", { name: /Learn More/i });
+  expect(linkElement).toBeInTheDocument();
+});
