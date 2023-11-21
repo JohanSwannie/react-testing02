@@ -37,3 +37,11 @@ test("Code renders 'The more you learn'", () => {
   const linkElement = screen.getByRole("link", { name: /Learn More/i });
   expect(linkElement).toBeInTheDocument();
 });
+
+test("Code render 'Change the Color'", () => {
+  render(<App />);
+  const buttonElement = screen.getByRole("button", {
+    name: /Change the Color/i,
+  });
+  expect(buttonElement).toBeInTheDocument();
+});
