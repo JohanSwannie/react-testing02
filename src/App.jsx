@@ -8,6 +8,7 @@ function App() {
       <h3 id="subheading">
         The more you learn, the better equipped you will become
       </h3>
+      <a href="#">Learn More</a>
     </div>
   );
 }
