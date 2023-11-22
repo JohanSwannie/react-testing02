@@ -9,8 +9,16 @@ const ColorPicket = () => {
       "green",
       "orange",
       "peachpuff",
+      "orange",
+      "skyblue",
+      "red",
+      "blue",
+      "navy",
+      "pink",
+      "olive",
+      "gray",
     ];
-    const color = randomColors[Math.floor(Math.random() * 4)];
+    const color = randomColors[Math.floor(Math.random() * randomColors.length)];
     document.getElementById("butty").style.backgroundColor = color;
   };
 
